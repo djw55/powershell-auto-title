@@ -16,7 +16,7 @@
 
 # Machine label shown after the dash. Defaults to your computer name.
 # Set it to any custom label to override, e.g.:
-#   $TitleMachine = "Riggs"
+#   $TitleMachine = "MyPC"
 $TitleMachine = [System.Net.Dns]::GetHostName()
 
 function prompt {

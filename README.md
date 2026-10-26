@@ -4,7 +4,7 @@ Auto-title every PowerShell window and tab to show the current folder and
 machine name:
 
 ```
-"C:\Users\you\projects" - Riggs
+"C:\Users\you\projects" - MyPC
 ```
 
 The title updates automatically as you `cd` around, because it re-runs on
@@ -38,7 +38,7 @@ The title uses your computer name by default. To use a different label —
 say, to pretty-case it — edit this line at the top of `profile.ps1`:
 
 ```powershell
-$TitleMachine = "Riggs"
+$TitleMachine = "MyPC"
 ```
 
 ## How it works
@@ -59,8 +59,8 @@ sets `suppressApplicationTitle` to `true`, which is off by default).
   same profile.
 - **PowerShell 5.1 and 7?** Both. Only the profile path differs (see the
   table above); the snippet itself is identical.
-- **Wrong casing (e.g. "RIGGS")?** Set `$TitleMachine` to the exact label
-  you want and it will be used as-is.
+- **Wrong casing?** If the auto-detected name shows all-caps, set
+  `$TitleMachine` to the exact label you want and it will be used as-is.
 
 ## License
 
